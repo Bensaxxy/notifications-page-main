@@ -1,5 +1,7 @@
+/* font links */
 @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;800&display=swap');
 
+/* color links */
 :root {
   /* Primary */
   --Red: hsl(1, 90%, 64%);
@@ -23,6 +25,7 @@
 }
 
 
+/* body */
 body {
   font-family: 'Plus Jakarta Sans', sans-serif;
   font-size: 16px;
@@ -30,6 +33,7 @@ body {
   color: var(--Dark-grayish-blue);
 }
 
+/* container */
 .container {
   max-width: 860px;
   margin: 80px auto;
@@ -52,17 +56,20 @@ body {
   margin-bottom: 30px;
 }
 
+/* title */
 .title {
   display: flex;
   align-items: center;
 }
 
+/* title text */
 .title-text {
   color: var(--Very-dark-blue);
   font-size: 22px;
   font-weight: 800;
 }
 
+/* total notifications */
 .num {
   color: white;
   background-color: var(--Blue);
@@ -88,11 +95,13 @@ a.read:hover {
   align-items: center;
 }
 
+/* unseen */
 .unseen {
   background-color: var(--Very-light-grayish-blue);
   border-radius: 10px;
 }
 
+/* avater images */
 .avater img {
   width: 50px;
   margin-right: 15px;
@@ -120,6 +129,7 @@ a.read:hover {
   cursor: pointer;
 }
 
+/* small red dot */
 span.dot {
   display: inline-block;
   background-color: var(--Red);
@@ -129,6 +139,7 @@ span.dot {
   margin-left: 7px;
 }
 
+/* message */
 .message {
   border: 1.5px solid var(--Light-grayish-blue-2);
   padding: 12px;
@@ -163,7 +174,6 @@ span.dot {
 .attribution {
   font-size: 14px;
   text-align: center;
-  margin-top: -50px;
   margin-bottom: 20px;
 }
 
@@ -174,6 +184,8 @@ span.dot {
 
 /* Media Quaries */
 @media only screen and (max-width: 600px) {
+  
+  /* body */
   body {
     font-size: 14px;
     line-height: 1.5;
