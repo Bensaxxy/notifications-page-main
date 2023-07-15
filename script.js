@@ -1,12 +1,12 @@
-const button = document.getElementById("read");
+let click = document.getElementById("read");
 
-button.addEventListener("click", () =>{
-    document.querySelectorAll(".single-box").forEach(e => {
+click.addEventListener("click", () => {
+    document.querySelectorAll(".unseen").forEach((e) => {
         e.classList.remove("unseen");
-    })
-    document.querySelectorAll(".dot").forEach(e => {
+    });
+    document.querySelectorAll(".dot").forEach((e) => {
         e.classList.remove("dot");
-    })
+    });
 
     document.getElementById("num").innerText = "0";
-})
+});

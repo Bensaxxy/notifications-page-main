@@ -22,6 +22,7 @@
   list-style: none;
 }
 
+
 body {
   font-family: 'Plus Jakarta Sans', sans-serif;
   font-size: 16px;
@@ -39,7 +40,7 @@ body {
 .wrapper {
   background-color: white;
   padding: 40px 30px 0;
-  margin: 30px;
+  margin: 30px 30px 10px;
   border-radius: 15px;
   box-shadow: 0px 0px 26px rgba(0, 0, 0, 0.1);
 }
@@ -76,6 +77,10 @@ a.read {
   font-size: 16px;
 }
 
+a.read:hover {
+  color: var(--Blue);
+}
+
 .single-box {
   padding: 17px;
   margin: 12px 0;
@@ -107,8 +112,12 @@ a.group {
   font-weight: 800;
 }
 
-a.name:hover a.post:hover a.group:hover a.read:hover {
+a.name:hover,
+a.post:hover,
+a.group:hover,
+a.read:hover {
   color: var(--Blue);
+  cursor: pointer;
 }
 
 span.dot {
@@ -125,6 +134,13 @@ span.dot {
   padding: 12px;
   font-size: 14px;
   margin-top: 13px;
+  transition: 0.5s;
+}
+
+.message:hover {
+  border: 1.5px solid none;
+  background-color: var(--Light-grayish-blue-1);
+  cursor: pointer;
 }
 
 .with-mssg {
@@ -144,34 +160,48 @@ span.dot {
   width: 50px;
 }
 
+.attribution {
+  font-size: 14px;
+  text-align: center;
+  margin-top: -50px;
+  margin-bottom: 20px;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
 
 /* Media Quaries */
 @media only screen and (max-width: 600px) {
-  body{
+  body {
     font-size: 14px;
     line-height: 1.5;
   }
-  .container{
+
+  .container {
     margin: 20px auto;
   }
 
-  .wrapper{
+  .wrapper {
     margin: 10px;
     padding: 25px 15px 0;
   }
-  .title-text{
+
+  .title-text {
     font-size: 20px;
   }
-  .num{
+
+  .num {
     padding: 1px 8px;
     margin-left: 5px;
   }
 
-  a.read{
+  a.read {
     font-size: 14px;
   }
 
-  .message p{
+  .message p {
     font-size: 12px;
     padding: 6px;
   }
